@@ -1,0 +1,4 @@
+Background -> https://unsplash.com/photos/D4ctZEF3Te4;
+API -> https://www.superheroapi.com;
+ICONS -> https://icomoon.io/;
+Design Inspiration -> https://dribbble.com/shots/17622673-Avengers-Marvel-Studios-Characters-Design-Layout

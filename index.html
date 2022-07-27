@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperHeroes & Villains</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="app/app.js" defer type="module"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <nav class="nav">
+                <ul class="nav__items">
+                    <li class="nav__items--item"><a href="#">Home</a></li>
+                    <li class="nav__items--item"><a href="#footer">Contact</a></li>
+                </ul>
+
+                <div class="nav__user">
+                    <svg class="nav__user--icon">
+                        <use xlink:href="assets/sprite.svg#icon-user"></use>
+                    </svg>
+                    <svg class="nav__user--icon">
+                        <use xlink:href="assets/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="search">
+                <form action="" class="search__form">
+                    <input type="text" id="search_input" class="search__form--input" placeholder="Search character by name...">
+                    <label for="search_input" class="search__form--label">Search</label>
+                        <button type="button" class="search__form--btn">Random Character</button>
+                </form>
+                <p>Example: Aquaman, General Zod, Captain America, Loki, Iron Man</p>
+            </div>
+            <div class="section">
+                <div class="hero__section--name">
+                    <h3></h3>
+                    <div class="hero__section--name-version">
+                    </div>
+                </div>
+                <div class="hero">
+                    <div class="hero__section">
+                        <div class="hero__section--details">
+                            <svg class="hero__section--icon">
+                                <use xlink:href="assets/sprite.svg#icon-info"></use>
+                            </svg>
+
+                        </div>
+                        <div class="hero__section--power">
+                            <svg class="hero__section--icon">
+                                <use xlink:href="assets/sprite.svg#icon-bar-graph"></use>
+                            </svg>
+
+                        </div>
+                    </div>
+                    <figure class="hero__photo">
+
+                    </figure>
+                </div>
+            </div>
+            <div class="hero__description">
+                <svg class="hero__section--icon">
+                    <use xlink:href="assets/sprite.svg#icon-news"></use>
+                </svg>
+
+            </div>
+        </main>
+
+        <footer class="footer" id="footer">
+            <h3>&copy; 2022 <span>Angelin</span> | For Educational Purposes Only</h3>
+            <div class="footer__social">
+                <a href="https://dan-angelin.com/" target="_blank">
+                    <svg class="footer__social--icon">
+                        <use xlink:href="assets/sprite.svg#icon-network"></use>
+                    </svg>
+                </a>
+                <a href="https://github.com/DanAngelin" target="_blank">
+                    <svg class="footer__social--icon">
+                        <use xlink:href="assets/sprite.svg#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/angelindan/" target="_blank">
+                    <svg class="footer__social--icon">
+                        <use xlink:href="assets/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
