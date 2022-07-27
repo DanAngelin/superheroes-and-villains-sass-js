@@ -1,5 +1,10 @@
-# 🦇All SuperHeroes and Villians SASS JavaScript API🕸️
+# 🦇All SuperHeroes and Villains SASS JavaScript API🕸️
 
-View the Generator => [Live](https://dan-angelin.com/projects/superheroes-and-villains/)
+- 🧑‍💻 HTML | SASS | JavaScript
+- 💥 API -> superheroapi (The data is accessible through a REST API.)
+- 💣 All the superhero data you've needed.
+- 🕸️ Powerstats. Biography. Appearance. Work. Connections. Images.
+
+Click for View => [Live](https://dan-angelin.com/projects/superheroes-and-villains/)
 
 ![superheroes](https://i.imgur.com/iqQpH4T.jpg) 
