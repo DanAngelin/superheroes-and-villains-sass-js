@@ -5,6 +5,12 @@
     $font-primary: 'Righteous', cursive, sans-serif;
     $font-secondary: 'Sofia', cursive, sans-serif;
 
+    $bp-largest: 75em; //1200px
+    $bp-large: 68.75em ;//1000px
+    $bp-medium: 56.23em; // 900px
+    $bp-small: 46.875em; // 750px
+    $bp-smallest: 40.625em; // 650px
+
 
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sofia&display=swap');
 

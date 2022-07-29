@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperHeroes & Villains</title>
+    <title>SuperHeroes & Villains - SASS | JavaScript</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="app/app.js" defer type="module"></script>
 </head>
@@ -31,11 +31,13 @@
 
         <main class="main">
             <div class="search">
-                <form action="" class="search__form">
-                    <input type="text" id="search_input" class="search__form--input" placeholder="Search character by name...">
-                    <label for="search_input" class="search__form--label">Search</label>
-                        <button type="button" class="search__form--btn">Random Character</button>
-                </form>
+                <div class="search__section">
+                    <form action="" class="search__section-form">
+                        <input type="text" id="input-hero" class="search__section-form_input" placeholder="Search character by name...">
+                        <label for="input-hero" class="search__section-form_label">Search</label>
+                    </form>
+                    <button type="button" class="search__section-btn">Random Character</button>
+                </div>
                 <p>Example: Aquaman, General Zod, Captain America, Loki, Iron Man</p>
             </div>
             <div class="section">
@@ -46,29 +48,45 @@
                 </div>
                 <div class="hero">
                     <div class="hero__section">
-                        <div class="hero__section--details">
+                        <div class="hero__section--1">
                             <svg class="hero__section--icon">
                                 <use xlink:href="assets/sprite.svg#icon-info"></use>
                             </svg>
+                            <div class="hero__section--1-details">
+
+                            </div>
 
                         </div>
-                        <div class="hero__section--power">
+
+                        <figure class="hero__section--img">
+
+                        </figure>
+
+                    </div>
+
+                    <div class="hero__section">
+                        <div class="hero__section--2">
                             <svg class="hero__section--icon">
                                 <use xlink:href="assets/sprite.svg#icon-bar-graph"></use>
                             </svg>
-
+                            <div class="hero__section--2-power">
+    
+                            </div>
+    
                         </div>
+
+                        <div class="hero__section--3">
+                            <svg class="hero__section--icon">
+                                <use xlink:href="assets/sprite.svg#icon-news"></use>
+                            </svg>
+                            <div class="hero__section--3-description">
+                            </div>
+                        </div>
+
+
                     </div>
-                    <figure class="hero__photo">
 
-                    </figure>
                 </div>
-            </div>
-            <div class="hero__description">
-                <svg class="hero__section--icon">
-                    <use xlink:href="assets/sprite.svg#icon-news"></use>
-                </svg>
-
             </div>
         </main>
 

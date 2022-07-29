@@ -11,6 +11,11 @@
     border-bottom: 1px solid $color-white;
     border-top: 1px solid $color-white;
     padding: .5rem 0;
+
+    @media screen and (max-width: $bp-small) {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
 
 .main {
@@ -26,6 +31,10 @@
 .footer {
     margin-top: 2rem;
     text-align: center;
+
+    @media screen and (max-width: $bp-smallest) {
+        font-size: .6rem;
+    }
 
     &__social {
         display: flex;

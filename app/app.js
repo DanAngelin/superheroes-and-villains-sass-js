@@ -3,13 +3,13 @@ import { superhero } from "./superhero.js"
 import * as view from './view.js';
 
 const nameCharacter = document.querySelector(".hero__section--name h3")
-const imageCharacter = document.querySelector(".hero__photo");
-const detailsCharacter = document.querySelector(".hero__section--details");
-const powerCharacter = document.querySelector(".hero__section--power");
-const descriptionCharacter = document.querySelector(".hero__description");
-const input = document.querySelector(".search__form--input");
+const imageCharacter = document.querySelector(".hero__section--img");
+const detailsCharacter = document.querySelector(".hero__section--1-details");
+const powerCharacter = document.querySelector(".hero__section--2-power");
+const descriptionCharacter = document.querySelector(".hero__section--3-description");
+const input = document.querySelector(".search__section-form_input");
 const allVersions = document.querySelector(".hero__section--name-version");
-const btnRandom = document.querySelector(".search__form--btn")
+const btnRandom = document.querySelector(".search__section-btn")
 const ifNotHaveStat = ["null", "undefined"]
 
 
@@ -27,9 +27,7 @@ const character = async(idName) => {
             appearance: {gender, race, height, weight},
             powerstats: {combat, durability, intelligence, power, speed, strength},
             work: {base, occupation},
-            connections }= data
-            
-
+            connections }= data;
 
             
 /*-------------- List All Version Character -------------- */
@@ -40,7 +38,6 @@ const character = async(idName) => {
 
 /*-------------- Image Character -------------- */
 view.imgCharacter(imageCharacter, url);
-
 
 /*-------------- Name Character -------------- */
 nameCharacter.textContent = name;
@@ -103,7 +100,7 @@ character(`search/${superhero[randomId]}`);
 
 
 /*-------------- Search Input -------------- */
-document.querySelector(".search__form--label").addEventListener("click", (e) => {
+document.querySelector(".search__section-form_label").addEventListener("click", (e) => {
   e.preventDefault();
   character(`search/${input.value}`);
   input.value = "";
