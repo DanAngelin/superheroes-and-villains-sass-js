@@ -2,3 +2,4 @@ Background -> https://unsplash.com/photos/D4ctZEF3Te4;
 API -> https://www.superheroapi.com;
 ICONS -> https://icomoon.io/;
 Design Inspiration -> https://dribbble.com/shots/17622673-Avengers-Marvel-Studios-Characters-Design-Layout
+Favicon -> https://icons-for-free.com/dc+character+hero+super+hero+icon-1320166695417792707/

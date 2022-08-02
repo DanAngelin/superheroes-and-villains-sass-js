@@ -45,39 +45,32 @@ nameCharacter.textContent = name;
 
 /*-------------- Details Character -------------- */
     const objectBio = Object.values(biography);
-    detailsCharacter.innerHTML =
-    `
-    <p><span class="title--paragraph">Full Name: </span>${objectBio[0]}</p>
-    <p><span class="title--paragraph">Aliases: </span>${objectBio[2].join(", ")}</p>
-    <p><span class="title--paragraph">Gender: </span>${gender}</p>
-    <p><span class="title--paragraph">Place of Birth: </span>${objectBio[3]}</p>
-    <p><span class="title--paragraph">Publisher: </span>${objectBio[5]}</p>
-    <p><span class="title--paragraph">Race: </span>${ifNotHaveStat.includes(race) ? "-" : race}</p>
-    <p><span class="title--paragraph">Height: </span>${height.join(" | ")}</p>
-    <p><span class="title--paragraph">Weight: </span>${weight.join(" | ")}</p>
-    `;
+
+    view.spanContent("span_fullname", objectBio[0]);
+    view.spanContent("span_aliases", objectBio[2].join(", "));
+    view.spanContent("span_gender", gender);
+    view.spanContent("span_placeofbirth", objectBio[3]);
+    view.spanContent("span_publisher", objectBio[5]);
+    view.spanContent("span_race", race);
+    view.spanContent("span_height", height.join(" | "));
+    view.spanContent("span_weight", weight.join(" | "));
 
 
 /*-------------- Powerstats -------------- */
-    powerCharacter.innerHTML = 
-    `
-    <p><span class="title--paragraph">Intelligence: </span>${ifNotHaveStat.includes(intelligence) ? "-" : intelligence}</p>
-    <p><span class="title--paragraph">Strength: </span>${ifNotHaveStat.includes(strength) ? "-" : strength}</p>
-    <p><span class="title--paragraph">Speed: </span>${ifNotHaveStat.includes(speed) ? "-" : speed}</p>
-    <p><span class="title--paragraph">Durability: </span>${ifNotHaveStat.includes(durability) ? "-" : durability}</p>
-    <p><span class="title--paragraph">Power: </span>${ifNotHaveStat.includes(power) ? "-" : power}</p>
-    <p><span class="title--paragraph">Combat: </span> ${ifNotHaveStat.includes(combat) ? "-" : combat}</p>
-    `;
-
+view.spanContent("span_intelligence", intelligence);
+view.spanContent("span_strength", strength);
+view.spanContent("span_speed", speed);
+view.spanContent("span_durability", durability);
+view.spanContent("span_power", power);
+view.spanContent("span_combat", combat);
 
 /*-------------- Character description -------------- */
-    const groupAffiliation = Object.values(connections);
-    descriptionCharacter.innerHTML =
-    `
-    <p><span class="title--paragraph">Occupation: </span>${occupation}</p>
-    <p><span class="title--paragraph">Base: </span>${base}</p>
-    <p><span class="title--paragraph">Group Affiliation: </span>${groupAffiliation[0]}</p>
-    `
+const groupAffiliation = Object.values(connections);
+
+view.spanContent("span_occupation", occupation);
+view.spanContent("span_base", base);
+view.spanContent("span_group_affiliation", groupAffiliation[0]);
+
   } catch(err) {
     throw err;
   }
