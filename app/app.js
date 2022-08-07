@@ -79,7 +79,6 @@ view.spanContent("span_group_affiliation", groupAffiliation[0]);
 
 /*-------------- Random Characters -------------- */
 
-const arrayHeroes = ["Exodus", "Batgirl", "Professor X", "Ben 10", "General Zod", "Loki", "Boba Fett", "Enchantress", "Captain America", "Thor", "Thor Girl", "Spider-Man", "Green Arrow", "Yoda", "Quicksilver", "Groot", "Deadpool", "Robin", "Aquaman", "Flash", "Goku"]
 let randomId = Math.floor(Math.random() * superhero.length);
 
 btnRandom.addEventListener('click', () => {

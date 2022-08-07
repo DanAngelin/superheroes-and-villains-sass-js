@@ -1,3 +1,22 @@
+%FlexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%AlignCenter {
+    display: flex;
+    align-items: center;
+}
+
+%HeroSection {
+    border: 1px solid $color-white;
+    padding: 1rem;
+    border-radius: 1rem;
+    line-height: 2rem;
+    position: relative;
+}
+
 // Header
 .logo {
     width: 15rem;
@@ -7,9 +26,8 @@
 
 .nav {
     font-family: $font-secondary;
-    display: flex;
+    @extend %AlignCenter;
     justify-content: space-between;
-    align-items: center;
 
     @media screen and (max-width: $bp-small) {
         width: 100%;
@@ -49,9 +67,8 @@
     }
 
     &__user {
-        display: flex;
+        @extend %AlignCenter;
         gap: 1rem;
-        align-items: center;
 
         &--icon {
             width: 2.5rem;
@@ -70,15 +87,11 @@
 
 .search {
     font-family: $font-secondary;
-    display: flex;
+    @extend %FlexCenter;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     &__section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @extend %FlexCenter;
 
         @media screen and (max-width: $bp-smallest) {
             flex-direction: column;
@@ -86,8 +99,7 @@
 
         &-form {
             margin: 1rem 0;
-            display: flex;
-            align-items: center;
+            @extend %AlignCenter;
     
             &_label {
                 background-color: $color-red;
@@ -185,11 +197,7 @@
         }
 
         &--1 {
-            border: 1px solid $color-white;
-            padding: 1rem;
-            border-radius: 1rem;
-            line-height: 2rem;
-            position: relative;
+            @extend %HeroSection;
             flex: 0 0 70%;
 
             @media screen and (max-width: $bp-medium) {
@@ -198,22 +206,14 @@
         }
 
         &--2 {
-            border: 1px solid $color-white;
-            padding: 1rem;
+            @extend %HeroSection;
             flex: 1;
-            border-radius: 1rem;
-            line-height: 2rem;
-            position: relative;
             flex: 0 0 30%;
         }
 
         &--3 {
-            border: 1px solid $color-white;
+            @extend %HeroSection;
             width: 100%;
-            border-radius: 1rem;
-            padding: 1rem;
-            line-height: 2rem;
-            position: relative;
             flex: 1;
         }
 
