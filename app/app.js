@@ -4,13 +4,11 @@ import * as view from './view.js';
 
 const nameCharacter = document.querySelector(".hero__section--name h3")
 const imageCharacter = document.querySelector(".hero__section--img");
-const detailsCharacter = document.querySelector(".hero__section--1-details");
-const powerCharacter = document.querySelector(".hero__section--2-power");
-const descriptionCharacter = document.querySelector(".hero__section--3-description");
 const input = document.querySelector(".search__section-form_input");
 const allVersions = document.querySelector(".hero__section--name-version");
 const btnRandom = document.querySelector(".search__section-btn")
-const ifNotHaveStat = ["null", "undefined"]
+const btnSearch = document.querySelector(".search__section-form_label")
+
 
 
 /*-------------- Async function -------------- */
@@ -89,15 +87,20 @@ btnRandom.addEventListener('click', () => {
 
 character(`search/${superhero[randomId]}`);
 
-
-
 /*-------------- Search Input -------------- */
-document.querySelector(".search__section-form_label").addEventListener("click", (e) => {
+btnSearch.addEventListener("click", (e) => {
   e.preventDefault();
   character(`search/${input.value}`);
   input.value = "";
   allVersions.innerHTML = "";
 });
+
+input.addEventListener("keypress", e => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    btnSearch.click()
+  }
+})
 
 allVersions.addEventListener('click', (event) => {
   event.preventDefault();
