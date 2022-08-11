@@ -17,6 +17,10 @@
     position: relative;
 }
 
+%BackgroundSection {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.01));
+}
+
 // Header
 .logo {
     width: 15rem;
@@ -42,6 +46,12 @@
             font-size: 1rem;
         }
 
+        &--icon {
+            fill: $color-white;
+            width: 2rem;
+            height: 2rem;
+        }
+
         &--item {
             list-style: none;
             margin-right: 1rem;
@@ -59,9 +69,11 @@
 
             a:link,
             a:visited {
+                display: flex;
+                align-items: center;
                 color: $color-white;
                 text-decoration: none;
-                padding: .5rem 1rem;
+                padding: .3rem;
             }
         }
     }
@@ -74,10 +86,13 @@
             width: 2.5rem;
             height: 2.5rem;
             padding: .3rem;
+            cursor: pointer;
             fill: $color-white;
+            transition: all .5s;
 
-            &:first-child {
+            &:hover {
                 background-color: $color-red;
+                border-radius: 1rem 0 1rem 0;
             }
         }
     }
@@ -108,6 +123,11 @@
                 border-radius: 0 1rem 1rem 0;
                 cursor: pointer;
                 border: none;
+                transition: all .8s cubic-bezier(0,1.65,.85,.7);
+
+                &:active {
+                    transform: scale(1.1);
+                }
             }
     
             &_input {
@@ -130,11 +150,11 @@
         border-radius: 1rem;
         margin-left: 1.5rem;
         cursor: pointer;
-        transition: all .3s;
+        transition: all .8s cubic-bezier(0,1.65,.85,.7);
 
-        &:focus {
+        &:active {
             background-color: $color-red-focus;
-            transform: translateY(-1px);
+            transform: scale(1.1);
         }
     }
     }
@@ -192,6 +212,11 @@
                     font-size: 1rem;
                     font-weight: 700;
                     cursor: pointer;
+                    transition: all .8s cubic-bezier(0,1.65,.85,.7);
+
+                    &:active {
+                        transform: scale(1.1)
+                    }
                 }
             }
         }
@@ -199,6 +224,7 @@
         &--1 {
             @extend %HeroSection;
             flex: 0 0 70%;
+            @extend %BackgroundSection;
 
             @media screen and (max-width: $bp-medium) {
                 flex: 0 0 60%;
@@ -209,15 +235,18 @@
             @extend %HeroSection;
             flex: 1;
             flex: 0 0 30%;
+            @extend %BackgroundSection;
         }
 
         &--3 {
             @extend %HeroSection;
             width: 100%;
             flex: 1;
+            @extend %BackgroundSection;
         }
 
         &--img {
+            box-shadow: 1px 4px 12px 1px rgba(255, 255, 255, 0.2);
 
             @media screen and (max-width: $bp-smallest) {
                 display: flex;
