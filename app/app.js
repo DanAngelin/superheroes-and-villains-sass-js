@@ -55,12 +55,12 @@ nameCharacter.textContent = name;
 
 
 /*-------------- Powerstats -------------- */
-view.spanContent("span_intelligence", intelligence);
-view.spanContent("span_strength", strength);
-view.spanContent("span_speed", speed);
-view.spanContent("span_durability", durability);
-view.spanContent("span_power", power);
-view.spanContent("span_combat", combat);
+view.progressBar("span_intelligence", intelligence);
+view.progressBar("span_strength", strength);
+view.progressBar("span_speed", speed);
+view.progressBar("span_durability", durability);
+view.progressBar("span_power", power);
+view.progressBar("span_combat", combat);
 
 /*-------------- Character description -------------- */
 const groupAffiliation = Object.values(connections);

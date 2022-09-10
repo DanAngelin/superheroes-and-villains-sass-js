@@ -1,3 +1,30 @@
 .title--paragraph {
     color: $color-red
 }
+
+.progress {
+    height: 1.3rem;
+    border-radius: 1rem;
+    width: 85%;
+    background-color: $color-white;
+    position: relative;
+
+    &-bar {
+        height: 100%;
+        background-color: #0078D4;
+        border-radius: inherit;
+        position: relative;
+
+        &-text {
+            height: 100%;
+            position: absolute;
+            left: 100%;
+            z-index: 1;
+            color: $color-red;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+}

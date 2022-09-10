@@ -7,4 +7,4 @@
 
 Click for View => [Live](https://dan-angelin.com/projects/superheroes-and-villains/)
 
-![superheroes](https://i.imgur.com/hbEtkeJ.jpg) 
+![superheroes](https://i.imgur.com/WHc7AmQ.jpg) 
