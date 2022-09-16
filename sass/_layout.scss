@@ -50,6 +50,7 @@
             fill: $color-white;
             background-color: $color-red;
             transition: all .3s;
+            cursor: url(../assets/cursor_hover.png), auto;
 
             &:hover {
                 transform: scale(1.1);
